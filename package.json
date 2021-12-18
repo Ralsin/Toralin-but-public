@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node aroc.js"
   },
-  "author": "Ralsi#9199, LinCat#8685, ToSa#1670",
+  "author": "Ralsi#9199",
   "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
@@ -18,12 +18,8 @@
     "express": "^4.17.1",
     "ms": "^2.1.3",
     "mysql2": "^2.3.0",
-    "nodegit": "^0.27.0",
     "sequelize": "^6.7.0",
     "sqlite3": "^5.0.2",
     "utf-8-validate": "^5.0.6"
-  },
-  "devDependencies": {
-    "node": "^16.10.0"
   }
 }
