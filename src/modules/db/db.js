@@ -1,10 +1,11 @@
 const Sequelize = require('sequelize');
+if(process.argv[2] == 'git-sync') dir = './bot/src/'; else dir = './src/';
 // connection
 const sequelize = new Sequelize({
 	host: 'localhost',
 	dialect: 'sqlite',
 	logging: false,
-	storage: './src/modules/db/db.sqlite',
+	storage: `${dir}modules/db/db.sqlite`,
 })
 // databases
 const rship = sequelize.define('relationships', {
