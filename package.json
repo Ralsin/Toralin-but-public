@@ -1,0 +1,29 @@
+{
+  "name": "toralin",
+  "version": "1.2.2",
+  "main": "aroc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node aroc.js"
+  },
+  "author": "Ralsi#9199, LinCat#8685, ToSa#1670",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "bufferutil": "^4.0.3",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ms": "^2.1.3",
+    "mysql2": "^2.3.0",
+    "nodegit": "^0.27.0",
+    "sequelize": "^6.7.0",
+    "sqlite3": "^5.0.2",
+    "utf-8-validate": "^5.0.6"
+  },
+  "devDependencies": {
+    "node": "^16.10.0"
+  }
+}
