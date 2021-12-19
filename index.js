@@ -5,8 +5,7 @@ require('dotenv').config();
 
 bot.cmds = new Collection();
 const load_dir = (dirs) => {
-    if(process.argv[2] == 'git-sync') dir = `./bot/Toralin-but-public/src/${dirs}`; else dir = `./src/${dirs}`;
-    const files = require('fs').readdirSync(dir).filter(file => file.endsWith('.js'));
+    const files = require('fs').readdirSync(`./src/${dirs}`).filter(file => file.endsWith('.js'));
     for(file of files){
         const command = require(`./src/${dirs}/${file}`)
         bot.cmds.set(command.data.name, command)
