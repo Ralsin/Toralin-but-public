@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-if(process.argv[2] == 'git-sync') dir = './bot/src/'; else dir = './src/';
+if(process.argv[2] == 'git-sync') dir = './bot/Toralin-but-public/src/'; else dir = './src/';
 // connection
 const sequelize = new Sequelize({
 	host: 'localhost',
