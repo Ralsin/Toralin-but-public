@@ -21,7 +21,7 @@ module.exports = {
             }
         }
         const req = require('https').get(options, res => {
-            console.log(`statusCode: ${res.statusCode}`)
+            if(res.statusCode != '200') console.log(`statusCode: ${res.statusCode}`);
             let array = new Array();
             res.on('data', async d => {
                 array.push(d.toString('utf8'))
